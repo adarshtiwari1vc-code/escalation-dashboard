@@ -1,0 +1,108 @@
+.data-table-container {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table-title {
+  margin: 0 0 1.5rem 0;
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table thead {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  position: sticky;
+  top: 0;
+}
+
+.data-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.3s ease;
+}
+
+.data-table th.sortable:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.data-table td {
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.data-table tbody tr.even {
+  background: #f9f9f9;
+}
+
+.data-table tbody tr:hover {
+  background: #f0f0f0;
+  transition: background 0.2s ease;
+}
+
+.email-cell {
+  font-weight: 500;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.days-badge {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: #e3f2fd;
+  color: #1976d2;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.count-badge {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  min-width: 40px;
+  text-align: center;
+}
+
+.table-footer {
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+  color: #666;
+  font-size: 0.9rem;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .data-table-container {
+    padding: 1rem;
+  }
+
+  .data-table th,
+  .data-table td {
+    padding: 0.7rem 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .table-title {
+    font-size: 1rem;
+  }
+}

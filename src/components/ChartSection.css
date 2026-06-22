@@ -1,0 +1,29 @@
+.charts-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1.5rem;
+}
+
+.chart-container {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chart-title {
+  margin: 0 0 1rem 0;
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .charts-section {
+    grid-template-columns: 1fr;
+  }
+
+  .chart-container {
+    padding: 1rem;
+  }
+}
